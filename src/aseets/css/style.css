@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.container-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 15px 40px;
+  font-size: 20px;
+  margin-top: 20px;
+  transition: all 0.2s ease-in;
+}
+
+.container-button:hover {
+  color: black;
+  background-color: #fff;
+}
+
+.cards {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+.cards img {
+  display: block;
+  width: 100%;
+}
+.cards::after {
+  content: "+";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(26, 188, 156, 0.9);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  overflow: hidden;
+}
+.cards:hover::after {
+  opacity: 1;
+}
+
+.container-title {
+  margin-top: 20px;
+}
+.container-title .title {
+  font-size: 3rem;
+}
+.container-title-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 2rem;
+}
+.container-title-divider::before, .container-title-divider::after {
+  content: "";
+  width: 150px;
+  height: 2px;
+  background-color: black;
+}
+.container-title-divider i {
+  font-size: 2rem;
+}
+
+.cards-container {
+  width: 100%;
+}
+
+.cards img {
+  width: 350px;
+  height: 250px;
+}
+
+.about-container {
+  background-color: #1abc9c;
+  color: #fff;
+}
+
+.container-about-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 2rem;
+}
+.container-about-divider::before, .container-about-divider::after {
+  content: "";
+  width: 150px;
+  height: 2px;
+  display: block;
+  background-color: #fff;
+}
+
+.about {
+  margin: 5rem;
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.container-paragraph {
+  width: 80%;
+  font-size: 20px;
+  column-count: 2;
+  column-gap: 2rem;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-contact-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 2rem;
+}
+.container-contact-divider::before, .container-contact-divider::after {
+  content: "";
+  width: 150px;
+  height: 2px;
+  display: block;
+  background-color: black;
+}
+
+.navbar {
+  background-color: #2c3e50;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.navbar-site__brand {
+  color: #f8f9fa;
+  text-decoration: none;
+  padding: 25px 0;
+  font-weight: bolder;
+}
+
+.navbar .navbar-site__link {
+  color: #f8f9fa;
+  text-decoration: none;
+  font-weight: bolder;
+  transition: color 0.3s ease;
+}
+
+.navbar-site__link:hover {
+  color: #1abc9c;
+}
+
+.poster {
+  background-color: #1abc9c;
+  height: 100vh;
+}
+
+.poster-title {
+  font-size: 4rem;
+}
+.poster-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 2rem;
+}
+.poster .poster-divider::before,
+.poster .poster-divider::after {
+  content: "";
+  width: 150px;
+  height: 2px;
+  display: block;
+  background-color: #f8f9fa;
+}
+.poster-subtitle {
+  font-weight: lighter;
+}
+
+.poster-avatar {
+  width: 250px;
+  height: 250px;
+}
+
+/*# sourceMappingURL=style.css.map */

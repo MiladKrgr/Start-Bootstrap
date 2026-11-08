@@ -1,0 +1,32 @@
+// Base
+@use"./base/reset";
+@use"./base/typography";
+@use"./base/utilities";
+@use"./base/variables";
+@use"./base/mixin";
+// Components
+@use"./components/buttons";
+@use"./components/card";
+// layout
+@use"./layout/container";
+@use"./layout/header";
+@use"./layout/footer.scss";
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: variables.$bs-body-font-family;
+    font-size:variables.$bs-body-font-size ;
+    font-weight:variables.$bs-body-font-weight ;
+    line-height:variables.$bs-body-line-height ;
+}
+
+
+#portfolio,
+#about,
+#contact {
+    scroll-margin-top: 100px;
+}

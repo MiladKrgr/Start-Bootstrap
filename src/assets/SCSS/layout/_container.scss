@@ -1,0 +1,129 @@
+@use"../base/typography";
+@use"../base/variables";
+@use"../base/mixin";
+
+// یک کلاس آماده برای عنوان ( Title ) هر بخش 
+.container-title {
+
+    margin-top: 20px;
+
+    .title {
+        font-size: 3rem
+    }
+
+    &-divider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 2rem;
+
+        &::before,
+        &::after {
+            content: "";
+            width: 150px;
+            height: 2px;
+            background-color: variables.$bs-black;
+        }
+
+        i {
+            font-size: 2rem;
+        }
+    }
+}
+
+// Cards 
+// مربوط به بخش کارت ها 
+.cards-container {
+    width: 100%;
+}
+
+// مربوط به بخش عکس داخل کارت ها 
+.cards img {
+    width: 350px;
+    height: 250px;
+}
+
+
+
+// About 
+
+.about-container {
+    background-color: variables.$bs-teal;
+    color: variables.$bs-light;
+}
+
+.container-about-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+
+    &::before,
+    &::after {
+        content: "";
+        width: 150px;
+        height: 2px;
+        display: block;
+        background-color: variables.$bs-light;
+    }
+
+}
+
+.about {
+    margin: 5rem;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.container-paragraph {
+    width: 80%;
+    font-size: 20px;
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+
+// Contact Us 
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.formgroup {
+    width: 50%;
+    display: block;
+    font-size: 25px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.301);
+}
+
+.formgroup:focus {
+    outline: none;
+}
+
+.container-contact-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+
+    &::before,
+    &::after {
+        content: "";
+        width: 150px;
+        height: 2px;
+        display: block;
+        background-color: variables.$bs-black;
+    }
+
+}

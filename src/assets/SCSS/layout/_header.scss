@@ -1,0 +1,69 @@
+@use "../base/variables";
+@use"../base/utilities";
+@use"../base/typography";
+@use"../layout/container";
+
+// NavBar 
+استایل های مربوط به NavBar اصلی 
+.navbar {
+    background-color: variables.$bs-secondary;
+    font-family: variables.$bs-font-sans-serif;
+}
+
+.navbar-site__brand {
+    color: variables.$bs-light;
+    text-decoration: none;
+    padding: 25px 0;
+    font-weight: bolder;
+}
+
+.navbar .navbar-site__link {
+    color: variables.$bs-light;
+    text-decoration: none;
+    font-weight: bolder;
+    transition: color 0.3s ease;
+}
+
+.navbar-site__link:hover {
+    color: variables.$bs-teal;
+}
+
+.poster {
+    background-color: variables.$bs-teal;
+    height: 100vh;
+}
+
+// استال های مربوط به Poster یا Hero 
+.poster {
+
+    &-title {
+        font-size: 4rem;
+    }
+
+    &-divider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 2rem;
+    }
+
+    .poster-divider::before,
+    .poster-divider::after {
+        content: "";
+        width: 150px;
+        height: 2px;
+        display: block;
+        background-color: variables.$bs-gray-100;
+    }
+
+    &-subtitle {
+        font-weight: lighter;
+    }
+}
+
+// اندازه آواتار 
+.poster-avatar {
+    width: 250px;
+    height: 250px;
+}

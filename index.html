@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="src/assets/css/style.css">
+    <title>Start</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top text-uppercase">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a class="navbar-site__brand fs-3" href="#">
+                    Start Bootstrap
+                </a>
+                <ul class=" navbar-site__list d-flex gap-5 list-unstyled mb-0">
+                    <li> <a class="navbar-site__link" href="#portfolio">Portfolio</a></li>
+                    <li> <a class="navbar-site__link" href="#about">About</a></li>
+                    <li> <a class="navbar-site__link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="poster d-flex justify-content-center align-items-center flex-column text-light">
+            <div>
+                <img class="poster-avatar" src="src/assets/img/avataaars.svg" alt="">
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <h1 class="poster-title text-uppercase fw-bolder ">Start Bootstrap</h1>
+                <div class="poster-divider"><i class="bi bi-star-fill"></i></div>
+                <h3 class="poster-subtitle">Web Designer - Gamer - Lover - Learner</h3>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="portfolio">
+            <div class="container-title d-flex justify-content-center align-items-center flex-column">
+                <h2 class="title text-uppercase fw-bolder">Portfolio</h2>
+                <div class="container-title-divider"><i class="bi bi-star-fill"></i></div>
+            </div>
+            <div class="cards-container d-flex flex-row justify-content-center flex-wrap mt-5 gap-4">
+                <div class="cards"><img class="img-fluid" src="src/assets/img/cabin.png" alt="minimal cabin picture">
+                </div>
+                <div class="cards"><img class="img-fluid" src="src/assets/img/cake.png" alt="minimal cake picture">
+                </div>
+                <div class="cards"><img class="img-fluid" src="src/assets/img/circus.png" alt="minimal circus picture">
+                </div>
+                <div class="cards"><img class="img-fluid" src="src/assets/img/game.png" alt="minimal game picture">
+                </div>
+                <div class="cards"><img class="img-fluid" src="src/assets/img/safe.png" alt="minimal safe picture">
+                </div>
+                <div class="cards"><img class="img-fluid" src="src/assets/img/submarine.png"
+                        alt="minimal submarine picture"></div>
+            </div>
+        </section>
+        <section class="about-container">
+            <div id="about" class="about">
+                <div class="container-title d-flex justify-content-center align-items-center flex-column">
+                    <h2 class="title text-uppercase fw-bolder">about</h2>
+                    <div class="container-about-divider"><i class="bi bi-star-fill"></i></div>
+                </div>
+
+                <div class="container-paragraph">
+                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the
+                        complete
+                        source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy
+                        customization.
+
+                        You can create your own custom avatar for the masthead, change the icon in the dividers, and add
+                        your email address to the contact form to make it fully functional!
+
+                        Contact</p>
+                </div>
+                <div class="container-button">
+                    <i class="fas fa-download download-icon"></i>
+                    Free Download!
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container-title d-flex justify-content-center align-items-center flex-column">
+                <h2 class="title text-uppercase fw-bolder">Contact Me</h2>
+                <div class="container-contact-divider"><i class="bi bi-star-fill"></i></div>
+            </div>
+            <form class="form" action="">
+                <input class="formgroup" type="text" placeholder="Full name">
+                <input class="formgroup" type="email" placeholder="Email Address">
+                <input class="formgroup" type="tel" placeholder="Phone number">
+                <textarea class="formgroup" cols="10" rows="4" placeholder="Message"></textarea>
+                <input class="contact-button" type="submit">
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer d-flex justify-content-around align-items-center text-light">
+
+        <div class="location">
+            <h3 class="text-uppercase">Location</h3>
+            <p>2215 John Daniel Drive <br> Clark, MO 65243</p>
+        </div>
+        <div class="link d-flex flex-column justify-content-center align-items-center">
+            <h3 class="text-uppercase">Around the Web</h3>
+            <div class="icons d-flex gap-2">
+                <a class="icon-circle-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="icon-circle-link" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="icon-circle-link" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="icon-circle-link" href="#"><i class="fab fa-edge"></i></a>
+            </div>
+        </div>
+        <div class="aboutFreelancer">
+            <h3 class="text-uppercase">About Freelancer</h3>
+            Freelance is a free to use, MIT licensed Bootstrap theme created by
+            <a class="text-success" href="https://startbootstrap.com/">Start bootstrap</a> .
+        </div>
+    </footer>
+    <div class="copyRight">
+        Copyright © Startbootstrap.com 2023
+    </div>
+</body>
+
+</html>
